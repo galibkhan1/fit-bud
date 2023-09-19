@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}
+injury recover
+{% endblock title %}
+{% block content %}
+<h1>injury</h1>
+{% for i in username %}
+{% if i.sport == 'hockey' %}
+write injury recover for hockey
+{% endif %}
+
+{% if i.sport == 'cricket'%}
+write injury recover for cricket
+{% endif %}
+
+{% if i.sport == 'football'%}
+write injury recover for football
+{% endif %}
+
+{% if i.sport == 'basketball'%}
+write injury recover for basketball
+{% endif %}
+
+    
+
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}
+meal
+{% endblock title %}
+{% block content %}
+<h1>meals</h1>
+{% for i in username %}
+{% if i.sport == 'hockey' %}
+write meal for hockey
+{% endif %}
+
+{% if i.sport == 'cricket'%}
+write meal for cricket
+{% endif %}
+
+{% if i.sport == 'football'%}
+write meal for football
+{% endif %}
+
+{% if i.sport == 'basketball'%}
+write meal for basketball
+{% endif %}
+
+
+{% endfor %}
+
+{% endblock content %}
